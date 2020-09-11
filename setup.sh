@@ -26,9 +26,7 @@ wget -q -O dataset.zip https://zenodo.org/record/4007570/files/googletasks-1.0.0
 mv googletasks-1.0.0/googletasks-1.0.0.xml src/resources/
 rm -rf googletasks-1.0.0
 
-echo
 echo "Downloading raw datasets for description logic learning"
-echo
 
 ## TWITTER
 wget -q -O dataset.zip https://zenodo.org/record/4008239/files/sub-twitter-1.0.0.zip && unzip -qq dataset.zip && rm dataset.zip
