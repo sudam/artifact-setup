@@ -9,7 +9,7 @@ START_MESSAGE="Welcome to HTTP Mock Skeletons Artifact 1.0.0"
 
 echo $START_MESSAGE
 echo
-echo "Downloading datasets..."
+echo "Downloading datasets and move to src/resources/ directory"
 wget -q -O tmp.zip https://zenodo.org/record/4007570/files/twitter-1.0.0.zip && unzip tmp.zip && rm tmp.zip
 mv twitter-1.0.0/twitter-1.0.0.xml src/resources/
 wget -q -O tmp.zip https://zenodo.org/record/4007570/files/googletasks-1.0.0.zip && unzip tmp.zip && rm tmp.zip
