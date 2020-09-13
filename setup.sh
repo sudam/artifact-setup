@@ -1,5 +1,6 @@
 #!/bin/bash 
 echo "Welcome for Reproducing Experimental Results"
+echo
 echo "Start setting up experimental environment"
 echo "Creating scripts/src/resources folder"
 mkdir scripts/src/resources
@@ -12,7 +13,7 @@ wget -q -O googletasks-abl.zip https://zenodo.org/record/4007570/files/googletas
 echo "Raw datasets for attribute-based learning downloaded"
 echo "Downloading raw datasets for description logic learning"
 wget -q -O twitter-dll.zip https://zenodo.org/record/4008239/files/sub-twitter-1.0.0.zip && unzip -qq twitter-dll.zip && rm twitter-dll.zip
-wget -q -O slack-dll.zip https://zenodo.org/record/4008239/files/sub-slack-1.0.0.zip && unzip -qq lack-dll.zip && rm slack-dll.zip
+wget -q -O slack-dll.zip https://zenodo.org/record/4008239/files/sub-slack-1.0.0.zip && unzip -qq slack-dll.zip && rm slack-dll.zip
 wget -q -O ghtraffic-dll.zip https://zenodo.org/record/4008239/files/sub-ghtraffic-S-2.0.0.zip && unzip -qq ghtraffic-dll.zip && rm ghtraffic-dll.zip
 echo "Raw datasets for description logic learning downloaded"
 echo "Extracting and moving dataset files to scripts/src/resources"
